@@ -12,19 +12,19 @@ def ask_question(question, correct_answer):
 def main():
     score = 0
 
-    score += ask_question("ما هي عاصمة مصر؟", "القاهرة")
-    score += ask_question("كم عدد أيام الأسبوع؟", "7")
-    score += ask_question("بايثون لغة برمجة؟ (نعم/لا)", "نعم")
+    score += ask_question("Captial of Egypt(Cairo - Sinai - Portsaid): ", "Cairo")
+    score += ask_question("how many days on a week(6 - 7 - 8): ", "7")
+    score += ask_question("Python is Programing language(Y or N): ", "Y")
 
     print()
-    print("\nالنتيجة النهائية:", score, "/ 3")
+    print("\nFinal Result is", score, "/ 3")
 
     if score == 3:
-        print("جامد")
+        print("Gamed")
     elif score == 2:
-        print("كويس")
+        print("Kwaees bs need to do more")
     else:
-        print("حاول تاني")
+        print("Try Again")
 
 
 main()
